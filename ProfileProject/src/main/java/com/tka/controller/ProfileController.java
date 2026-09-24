@@ -27,11 +27,9 @@ public class ProfileController {
 	}
 	
 	@PostMapping("/profileproject/add")
-	public Profile addProfile(
-	        @RequestBody Profile profile) {
-
-	    return profileService.addProfile(profile);
-
+	public Profile addProfile(@RequestBody Profile profile) {
+	  
+		return profileService.addProfile(profile);
 	}
 	
 	

@@ -14,16 +14,22 @@ public class ProfileService {
 	
 	@Autowired
     private ProfileRepository profilerepo;
+	
+	
 
 	public Profile searchByName(String fname) {
 		
 		return profilerepo.findByFname(fname);
 	}
+	
+	
 
 	public Profile addProfile(Profile profile) {
 		
 		return profilerepo.save(profile);
 	}
+	
+	
 
 	public Profile updateProfile(Profile profile) {
 
